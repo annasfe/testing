@@ -3,8 +3,8 @@
     <h1>Hello World</h1>
     <button @click="isAdmin = true" class="border">ADMIN</button>
     <button @click="isAdmin = false" class="border">USER</button>
-    <admin-view v-if="isAdmin" @createProject="addProject" />
-    <user-view v-else @createProject="addProject" />
+    <AdminView v-if="isAdmin" @createProject="addProject" />
+    <UserView v-else @createProject="addProject" />
   </div>
 </template>
 
@@ -15,8 +15,8 @@ import UserView from "./components/UserView.vue";
 export default {
   name: "App",
   components: {
-    userView: UserView,
-    adminView: AdminView,
+    UserView,
+    AdminView,
   },
   data() {
     return {
