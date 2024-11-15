@@ -1,5 +1,5 @@
 <template>
-  <div>User View</div>
+  <div>AQUI se mostrara el grid de los proyectos</div>
 </template>
 
 <script>

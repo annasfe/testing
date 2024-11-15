@@ -4,7 +4,7 @@
     <button @click="isAdmin = true" class="border">ADMIN</button>
     <button @click="isAdmin = false" class="border">USER</button>
     <AdminView v-if="isAdmin" @createProject="addProject" />
-    <UserView v-else @createProject="addProject" />
+    <UserView v-else />
   </div>
 </template>
 
